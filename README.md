@@ -58,6 +58,10 @@ A responsive web app featuring a dynamic To-Do List with task management and pri
 
 ---
 
+---
+
 ## 📄 License
 
 This project is open-source and free to use.
+
+---
