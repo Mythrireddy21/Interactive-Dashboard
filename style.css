@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+header h1 {
+  margin-bottom: 10px;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #0077cc;
+}
+.grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.todo-section, .contact-section {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+}
+.todo-section input, .contact-section input,
+.contact-section textarea, button {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+button {
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+ul {
+  list-style: none;
+  margin-top: 15px;
+  padding-left: 0;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+/* New styles for edit and delete icons */
+.task-icons i {
+  margin-left: 12px;
+  color: #555;
+  transition: color 0.3s ease;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.task-icons i:hover.delete-icon {
+  color: crimson;
+}
+.task-icons i:hover.edit-icon {
+  color: #0077cc;
+}
+
+#formMessage {
+  margin-top: 10px;
+  font-size: 14px;
+}
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
